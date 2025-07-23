@@ -66,7 +66,7 @@ uv sync
 4. **Environment Setup (Optional)**:
    ```bash
    # Create .env file if you want to use API key fallback
-   echo "GOOGLE_SHEETS_API_KEY=your_api_key_here" > .env
+   echo "SHEET_API_KEY=your_api_key_here" > .env
    ```
 
 ### Option 2: API Key Authentication (Public Sheets Only)
@@ -80,7 +80,7 @@ uv sync
 2. **Environment Configuration**:
    ```bash
    # Create .env file
-   echo "GOOGLE_SHEETS_API_KEY=your_api_key_here" > .env
+   echo "SHEET_API_KEY=your_api_key_here" > .env
    ```
 
 **Note**: API key authentication only works with publicly shared spreadsheets.
@@ -248,7 +248,7 @@ Create a `.env` file with:
 
 ```env
 # For API key authentication (public sheets only) - Optional fallback
-GOOGLE_SHEETS_API_KEY=your_api_key_here
+SHEET_API_KEY=your_api_key_here
 
 # Server Configuration
 SERVER_NAME=google-sheets-mcp-server
