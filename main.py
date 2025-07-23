@@ -11,14 +11,11 @@ from mcp.types import (
     Tool
 )
 import mcp.types as types
-
 from googleapiclient.discovery import build
-
 from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import InstalledAppFlow
 import json
-import pickle
 import os.path
 
 # Load environment variables
@@ -680,7 +677,7 @@ async def main():
             read_stream,
             write_stream,
             InitializationOptions(
-                server_name="powerbi-model-server",
+                server_name="sheets-mcp-server",
                 server_version="0.1.0",
                 capabilities=capabilities
             ),
